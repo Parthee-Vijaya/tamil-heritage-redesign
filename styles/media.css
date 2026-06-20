@@ -1,0 +1,127 @@
+/* ============================================================
+   TEL Library — Media shelves (e-books / audio / press) + contribute
+   ============================================================ */
+
+.shelf + .shelf { margin-block-start: var(--space-xl); }
+
+.rail {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-block-end: var(--space-sm);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.rail::-webkit-scrollbar { block-size: 6px; }
+.rail::-webkit-scrollbar-thumb { background: var(--line); border-radius: 100px; }
+
+/* Book covers */
+.book {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  inline-size: clamp(9.5rem, 16vw, 12rem);
+  text-decoration: none;
+  color: inherit;
+}
+.book__cover {
+  aspect-ratio: 3 / 4.3;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(150deg, var(--maroon-deep), var(--ochre-deep));
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+}
+.book__cover img {
+  inline-size: 100%; block-size: 100%; object-fit: cover;
+  filter: var(--img-filter);
+}
+.book__cover::before {
+  content: "";
+  position: absolute; inset-block: 0; inset-inline-start: 0;
+  inline-size: 7px;
+  background: linear-gradient(90deg, oklch(20% 0.02 50 / 0.35), transparent);
+  z-index: 2;
+}
+.book:hover .book__cover { transform: translateY(-6px) rotate(-1deg); box-shadow: var(--shadow-lg); }
+.book__title { margin-block-start: 0.7rem; font-family: var(--font-display); font-size: var(--text-base); font-weight: 480; line-height: 1.15; }
+.book__author { font-family: var(--font-ui); font-size: var(--text-2xs); letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint); margin-block-start: 0.25rem; }
+
+/* Audio cards */
+.audio {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  inline-size: clamp(15rem, 26vw, 19rem);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-sm);
+  align-items: center;
+  padding: var(--space-sm);
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.audio:hover { border-color: var(--ochre-deep); box-shadow: var(--shadow); transform: translateY(-3px); }
+.audio__art {
+  inline-size: 3.6rem; block-size: 3.6rem;
+  border-radius: var(--radius);
+  display: grid; place-items: center;
+  background: linear-gradient(140deg, var(--maroon-deep), var(--maroon) 68%, var(--ochre-deep));
+  color: var(--paper);
+  flex-shrink: 0;
+}
+.audio__art svg { inline-size: 1.4rem; }
+.audio__title { font-family: var(--font-display); font-size: var(--text-base); font-weight: 480; line-height: 1.15; }
+.audio__sub { font-family: var(--font-ui); font-size: var(--text-2xs); letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint); margin-block-start: 0.3rem; }
+
+/* Newspaper feature */
+.press {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 0.5rem + 3vw, 3.5rem);
+  align-items: center;
+}
+@media (max-width: 760px) { .press { grid-template-columns: 1fr; } }
+.press__stack { position: relative; aspect-ratio: 5 / 4; }
+.press__sheet {
+  position: absolute;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.press__sheet:nth-child(1) { inset: 8% 22% 14% 0; transform: rotate(-4deg); z-index: 1; }
+.press__sheet:nth-child(2) { inset: 4% 8% 8% 20%; transform: rotate(3deg); z-index: 2; }
+.press__sheet:nth-child(3) { inset: 0 0 18% 38%; transform: rotate(8deg); z-index: 3; }
+.press__sheet img { inline-size: 100%; block-size: 100%; object-fit: cover; filter: sepia(0.25) contrast(1.05) grayscale(0.1); }
+
+/* ---- Contribute band ---- */
+.contribute {
+  background:
+    radial-gradient(110% 140% at 12% 0%, oklch(50% 0.155 26 / 0.95), transparent 60%),
+    var(--maroon-deep);
+  color: var(--paper);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.25rem, 1.5rem + 3vw, 4rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(14rem, auto);
+  gap: var(--space-lg);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 760px) { .contribute { grid-template-columns: 1fr; } }
+.contribute::after {
+  content: "";
+  position: absolute; inset-block-start: -40%; inset-inline-end: -10%;
+  inline-size: 30rem; block-size: 30rem;
+  background: radial-gradient(circle, oklch(68% 0.115 74 / 0.22), transparent 60%);
+  pointer-events: none;
+}
+.contribute__title { color: var(--paper); font-size: var(--text-2xl); max-inline-size: 18ch; }
+.contribute__text { margin-block-start: var(--space-sm); color: oklch(92% 0.03 60 / 0.85); max-inline-size: 46ch; line-height: 1.55; }
+.contribute__actions { display: flex; flex-direction: column; gap: var(--space-sm); align-items: start; }
+.contribute .kicker { color: oklch(74% 0.12 76); } /* AA on the maroon band */

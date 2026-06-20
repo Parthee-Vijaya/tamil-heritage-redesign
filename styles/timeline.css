@@ -1,0 +1,81 @@
+/* ============================================================
+   TEL Library — Chronology / timeline navigator (signature)
+   ============================================================ */
+
+.timeline { position: relative; }
+.timeline__head { margin-block-end: var(--space-lg); }
+
+.timeline__track {
+  position: relative;
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-block: var(--space-md) var(--space-lg);
+  padding-inline: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-dark) transparent;
+}
+.timeline__track::-webkit-scrollbar { block-size: 6px; }
+.timeline__track::-webkit-scrollbar-thumb { background: var(--line); border-radius: 100px; }
+
+/* The connecting line */
+.timeline__rail {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 1.15rem;
+  block-size: 2px;
+  background: repeating-linear-gradient(90deg, var(--line-dark) 0 6px, transparent 6px 12px);
+  opacity: 0.5;
+}
+
+.era {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  inline-size: clamp(13rem, 22vw, 17rem);
+  text-decoration: none;
+  color: var(--ink);
+  display: grid;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--raised);
+  position: relative;
+  transition: transform var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+}
+.era:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--maroon); }
+.era__dot {
+  inline-size: 0.85rem; block-size: 0.85rem;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--maroon);
+  position: relative;
+  margin-block-end: 0.25rem;
+}
+.era:nth-child(even) .era__dot { border-color: var(--ochre-deep); }
+.era__years {
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  font-weight: 700;
+}
+.era:nth-child(even) .era__years { color: var(--ochre-deep); }
+.era__name {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  line-height: 1.1;
+  font-weight: 500;
+}
+.era__desc { font-size: var(--text-sm); color: var(--ink-soft); line-height: 1.45; }
+.era__count {
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.timeline__controls { display: flex; gap: 0.5rem; }

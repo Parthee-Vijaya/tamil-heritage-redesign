@@ -1,0 +1,122 @@
+/* ============================================================
+   TEL Library — Design Tokens
+   Direction: "Digital archive / editorial museum"
+   Warm archival paper, deep ink, memorial maroon, heritage ochre.
+   ============================================================ */
+
+:root {
+  /* ---- Color: surfaces (warm parchment) ---- */
+  --paper:        oklch(96.5% 0.013 85);   /* base background */
+  --paper-2:      oklch(93.8% 0.016 82);   /* recessed band */
+  --paper-3:      oklch(91.5% 0.018 80);   /* deeper band */
+  --raised:       oklch(98.6% 0.008 88);   /* cards / raised */
+  --ink-surface:  oklch(20% 0.018 55);     /* dark editorial band */
+  /* translucent parchment for sticky / blurred surfaces */
+  --paper-82:     oklch(96.5% 0.013 85 / 0.82);
+  --paper-92:     oklch(96.5% 0.013 85 / 0.92);
+  --paper-94:     oklch(96.5% 0.013 85 / 0.94);
+
+  /* ---- Color: ink (text) ---- */
+  --ink:        oklch(23% 0.014 55);   /* primary text */
+  --ink-soft:   oklch(38% 0.013 55);   /* secondary text */
+  --ink-faint:  oklch(47% 0.013 55);   /* meta / captions (AA-safe on recessed) */
+  --on-dark:    oklch(94% 0.010 85);   /* text on ink surfaces */
+  --on-dark-soft: oklch(78% 0.012 80);
+
+  /* ---- Color: lines ---- */
+  --line:       oklch(86% 0.014 75);
+  --line-soft:  oklch(90% 0.012 78);
+  --line-dark:  oklch(40% 0.02 60);
+
+  /* ---- Color: accents (semantic) ---- */
+  --maroon:      oklch(46% 0.145 25);  /* memorial / primary */
+  --maroon-deep: oklch(37% 0.125 26);
+  --maroon-tint: oklch(94% 0.030 30);
+  --ochre:       oklch(68% 0.115 74);  /* heritage / media — fills */
+  --ochre-deep:  oklch(56% 0.115 70);
+  --ochre-label: oklch(50% 0.12 68);   /* ochre TEXT — AA on parchment */
+  --ochre-tint:  oklch(93% 0.038 80);
+  --teal-deep:   oklch(38% 0.06 224);  /* name-card male tag */
+
+  /* ---- Typography: families ---- */
+  --font-display: "Fraunces", "Hoefler Text", Georgia, serif;
+  --font-body:    "Newsreader", Georgia, "Times New Roman", serif;
+  --font-ui:      "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-tamil:    "Tiro Tamil", "Noto Serif Tamil", "Latha", serif;
+  --font-tamil-ui: "Catamaran", "Noto Sans Tamil", ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- Typography: fluid scale ---- */
+  --text-2xs:  0.6875rem;                                   /* 11px labels */
+  --text-xs:   0.75rem;                                     /* 12px */
+  --text-sm:   0.8125rem;                                   /* 13px */
+  --text-base: clamp(1.0625rem, 1.01rem + 0.28vw, 1.1875rem);
+  --text-md:   clamp(1.1875rem, 1.12rem + 0.34vw, 1.375rem);
+  --text-card: clamp(1.25rem, 1.15rem + 0.4vw, 1.5rem);     /* card titles: between md & lg */
+  --text-lg:   clamp(1.375rem, 1.26rem + 0.55vw, 1.75rem);
+  --text-xl:   clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  --text-2xl:  clamp(2.25rem, 1.8rem + 2.2vw, 3.75rem);
+  --text-3xl:  clamp(2.75rem, 1.9rem + 4vw, 5.25rem);
+  --text-hero: clamp(3rem, 1.6rem + 6.4vw, 7rem);
+
+  /* ---- Typography: leading & tracking ---- */
+  --leading-display: 1.0;   /* single-purpose oversize heads */
+  --leading-tight: 1.04;    /* multi-line h1/h2 */
+  --leading-snug:  1.18;
+  --leading-body:  1.62;
+  --weight-lede:   400;     /* standfirst / lede on Newsreader */
+  /* uppercase-label tracking ladder */
+  --tracking-label: 0.16em; /* alias for eyebrow */
+  --track-eyebrow: 0.16em;  /* kicker / section eyebrow */
+  --track-label:   0.08em;  /* meta, tags, type badges, cite */
+  --track-micro:   0.05em;  /* byline, breadcrumb, topbar */
+  --tracking-tight: -0.02em;
+
+  /* ---- Measure ---- */
+  --measure: 66ch;
+  --measure-narrow: 54ch;
+
+  /* ---- Spacing scale ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs:  0.75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.25rem;
+  --space-xl:  3.5rem;
+  --space-2xl: 5rem;
+  --space-section: clamp(4rem, 3rem + 5vw, 8.5rem);
+
+  /* ---- Layout ---- */
+  --header-h:   7rem;    /* sticky stack: topbar 2.4 + nav 4.6 */
+  --wrap:       78rem;   /* 1248px */
+  --wrap-wide:  86rem;
+  --wrap-text:  44rem;   /* reading column */
+  --gutter:     clamp(1.25rem, 0.6rem + 3vw, 3rem);
+
+  /* ---- Radius (restrained, archival) ---- */
+  --radius-sm: 3px;
+  --radius:    6px;
+  --radius-lg: 10px;
+  --radius-pill: 100px;
+
+  /* ---- Shadows (soft, warm) ---- */
+  --shadow-sm:  0 1px 2px oklch(30% 0.03 60 / 0.06), 0 2px 6px oklch(30% 0.03 60 / 0.05);
+  --shadow:     0 4px 14px oklch(30% 0.03 60 / 0.08), 0 1px 3px oklch(30% 0.03 60 / 0.06);
+  --shadow-lg:  0 18px 50px oklch(28% 0.04 55 / 0.16), 0 4px 12px oklch(28% 0.04 55 / 0.08);
+  --shadow-ink: 0 24px 60px oklch(15% 0.03 50 / 0.45);
+
+  /* ---- Archival duotone image treatment (one recipe) ---- */
+  --img-filter:       grayscale(0.18) sepia(0.10) contrast(1.04) saturate(0.92);
+  --img-filter-hover: grayscale(0) sepia(0) contrast(1.02) saturate(1);
+
+  /* ---- Motion ---- */
+  --dur-fast:   160ms;
+  --dur:        320ms;
+  --dur-slow:   620ms;
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---- Z ---- */
+  --z-header: 100;
+  --z-overlay: 200;
+}

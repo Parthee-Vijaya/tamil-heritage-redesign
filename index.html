@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tamil Heritage — A Living Archive of Tamil Memory</title>
+<meta name="description" content="TEL Library — the Tamil diaspora's digital archive of history, language, culture and identity. Rebuilding what was lost." />
+<link rel="icon" href="https://telibrary.com/wp-content/uploads/2020/08/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Archivo:wght@500;600;700&family=Tiro+Tamil:ital@0;1&family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles/tokens.css" />
+<link rel="stylesheet" href="styles/typography.css" />
+<link rel="stylesheet" href="styles/global.css" />
+<link rel="stylesheet" href="styles/header.css" />
+<link rel="stylesheet" href="styles/hero.css" />
+<link rel="stylesheet" href="styles/timeline.css" />
+<link rel="stylesheet" href="styles/collections.css" />
+<link rel="stylesheet" href="styles/media.css" />
+<link rel="stylesheet" href="styles/footer.css" />
+<link rel="stylesheet" href="styles/i18n.css" />
+</head>
+<body data-title-key="home.title">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" data-header>
+  <div class="topbar">
+    <div class="wrap-wide topbar__inner">
+      <span class="topbar__today" data-i18n="topbar.today">On this day · <time datetime="1981-05-31">31 May 1981</time> — The burning of the Jaffna Public Library</span>
+      <nav class="topbar__links" aria-label="Utility">
+        <a href="newspapers.html" data-i18n="topbar.news">Newspapers</a>
+        <a href="albums.html" data-i18n="topbar.pods">Podcasts</a>
+        <a href="#" data-i18n="topbar.ebooks">E-Books</a>
+        <a href="gallery.html" data-i18n="topbar.photos">Photo Archive</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="wrap-wide">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Tamil Heritage — home">
+        <img class="brand__mark" src="https://telibrary.com/wp-content/uploads/2020/08/favicon.png" alt="" width="96" height="103" />
+        <span>
+          <span class="brand__name">Tamil&nbsp;Heritage</span>
+          <span class="brand__sub" data-i18n="brand.sub">TEL Library · Digital Archive</span>
+        </span>
+      </a>
+
+      <ul class="nav__menu" id="primary-menu" data-menu>
+        <li><a class="nav__link" href="archive.html" data-i18n="nav.history">History of Tamils</a></li>
+        <li><a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a class="nav__link" href="albums.html" data-i18n="nav.albums">Albums</a></li>
+        <li><a class="nav__link" href="newspapers.html" data-i18n="nav.news">Newspapers</a></li>
+        <li><a class="nav__link" href="learn.html" data-i18n="nav.learn">Learn</a></li>
+        <li><a class="nav__link" href="names.html" data-i18n="nav.names">Tamil&nbsp;Names</a></li>
+      </ul>
+
+      <div class="nav__tools">
+        <div class="lang" data-lang aria-label="Language">
+          <button type="button" data-set="ta" lang="ta" aria-pressed="false">தமிழ்</button>
+          <button type="button" data-set="en" class="is-active" aria-pressed="true">EN</button>
+        </div>
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn nav__burger" type="button" data-burger aria-label="Menu" aria-expanded="false" aria-controls="primary-menu">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="nav-scrim" data-scrim aria-hidden="true"></div>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="wrap-wide hero__grid">
+      <div class="hero__content">
+        <p class="kicker hero__eyebrow" data-reveal data-i18n="hero.kicker">The Tamil diaspora's living archive</p>
+        <h1 class="hero__title" id="hero-heading" data-reveal data-reveal-delay="60" data-i18n="hero.title">What was burned<br />can be <span class="accent">remembered.</span></h1>
+        <p class="hero__lede" data-reveal data-reveal-delay="140" data-i18n="hero.lede">A non-political home for Tamil history, language, culture and identity — rebuilt page by page after the fires of Jaffna. Read, listen, and add your own.</p>
+        <div class="hero__actions" data-reveal data-reveal-delay="200">
+          <a class="btn btn--maroon" href="archive.html">
+            <span data-i18n="hero.cta1">Explore the archive</span>
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contribute" data-i18n="hero.cta2">Contribute material</a>
+        </div>
+        <dl class="hero__stats" data-reveal data-reveal-delay="260">
+          <div class="stat"><dt class="stat__label" data-i18n="stat.items">Archived items</dt><dd class="stat__num">12,480</dd></div>
+          <div class="stat"><dt class="stat__label" data-i18n="stat.coll">Collections</dt><dd class="stat__num">6</dd></div>
+          <div class="stat"><dt class="stat__label" data-i18n="stat.langs">Languages</dt><dd class="stat__num"><span lang="ta">தமிழ்</span> · EN</dd></div>
+          <div class="stat"><dt class="stat__label" data-i18n="stat.since">Curating since</dt><dd class="stat__num">2021</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero__feature" data-reveal data-reveal-delay="120">
+        <div class="fig hero__fig">
+          <span class="hero__badge" data-i18n="hero.badge">Featured collection</span>
+          <img src="https://telibrary.com/wp-content/uploads/2025/10/Pandaravanniyan-1024x703.png"
+               alt="Portrait of Pandara Vanniyan, the Tamil chieftain who resisted colonial rule"
+               width="1024" height="703" fetchpriority="high" />
+          <figcaption class="hero__caption">
+            <span class="kicker kicker--bare" data-i18n="hero.feat.kicker">Political History</span>
+            <h2 data-i18n="hero.feat.title">Pandara Vanniyan &amp; the last Tamil resistance</h2>
+          </figcaption>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= MISSION / ORIGIN ================= -->
+  <section class="section band-ink mission" aria-labelledby="mission-heading">
+    <div class="wrap mission__inner">
+      <p class="mission__year" aria-hidden="true">1981<span data-i18n="mission.sub">The fire we answer</span></p>
+      <div>
+        <p class="kicker" style="color:var(--ochre)" data-i18n="mission.kicker">Why this archive exists</p>
+        <blockquote class="mission__quote" id="mission-heading" data-reveal data-i18n="mission.quote">
+          On the night of 31 May 1981, the Jaffna Public Library was set ablaze.
+          <strong>More than 97,000 books</strong>, palm-leaf manuscripts and 19th-century
+          newspapers turned to ash — among the largest acts of cultural destruction in South Asia.
+        </blockquote>
+        <p class="mission__text" data-reveal data-reveal-delay="120" data-i18n="mission.text">
+          TEL Library was founded on the 40th anniversary of that loss. We cannot recover
+          what burned — but we can make sure it is never lost again. Everything here is
+          gathered, digitised and kept by volunteers across the diaspora.
+        </p>
+        <p class="mission__cite" data-reveal data-reveal-delay="180" data-i18n="mission.cite">A non-political, community-built record</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <section class="section timeline wrap-wide" aria-labelledby="timeline-heading">
+    <div class="section-head timeline__head">
+      <div>
+        <p class="kicker" data-i18n="tl.kicker">Browse by era</p>
+        <h2 class="section-head__title" id="timeline-heading" data-i18n="tl.title">Two thousand years, one timeline</h2>
+      </div>
+      <div class="timeline__controls">
+        <button class="icon-btn" type="button" data-rail-prev="eras" aria-label="Earlier eras"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="icon-btn" type="button" data-rail-next="eras" aria-label="Later eras"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="timeline__track" data-rail="eras" tabindex="0" aria-label="Chronology of Tamil history">
+      <span class="timeline__rail" aria-hidden="true"></span>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">300 BCE – 300 CE</span><span class="era__name" data-i18n="era.sangam.n">Sangam Era</span><span class="era__desc" data-i18n="era.sangam.d">The classical age of Tamil poetry and the earliest literature.</span><span class="era__count">1,940 <span data-i18n="era.items">items</span></span></a>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">300 – 1279</span><span class="era__name" data-i18n="era.chola.n">Imperial Cholas</span><span class="era__desc" data-i18n="era.chola.d">Chera, Chola and Pandya kingdoms across the seas.</span><span class="era__count">2,610 <span data-i18n="era.items">items</span></span></a>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1336 – 1700</span><span class="era__name" data-i18n="era.med.n">Medieval Realms</span><span class="era__desc" data-i18n="era.med.d">Vijayanagara, Nayaks and the temple cities.</span><span class="era__count">1,120 <span data-i18n="era.items">items</span></span></a>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1505 – 1948</span><span class="era__name" data-i18n="era.col.n">Colonial Period</span><span class="era__desc" data-i18n="era.col.d">Portuguese, Dutch and British rule over the Tamil lands.</span><span class="era__count">1,875 <span data-i18n="era.items">items</span></span></a>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1948 – present</span><span class="era__name" data-i18n="era.modern.n">Modern Tamil Nadu</span><span class="era__desc" data-i18n="era.modern.d">Language movements, cinema, politics and renaissance.</span><span class="era__count">2,330 <span data-i18n="era.items">items</span></span></a>
+      <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1976 – 2009</span><span class="era__name" data-i18n="era.eelam.n">Tamil Eelam</span><span class="era__desc" data-i18n="era.eelam.d">The de facto state, the conflict and the diaspora.</span><span class="era__count">2,605 <span data-i18n="era.items">items</span></span></a>
+    </div>
+  </section>
+
+  <!-- ================= COLLECTIONS (BENTO) ================= -->
+  <section class="section band-paper-2" aria-labelledby="coll-heading">
+    <div class="wrap-wide">
+      <div class="section-head">
+        <div>
+          <p class="kicker kicker--ochre" data-i18n="coll.kicker">The six pillars</p>
+          <h2 class="section-head__title" id="coll-heading" data-i18n="coll.title">Curated collections</h2>
+        </div>
+        <a class="see-all" href="archive.html"><span data-i18n="coll.all">All collections</span><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="collections">
+        <a class="coll coll--feature" href="archive.html" data-reveal>
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2025/05/te1-1024x683.jpg" alt="" loading="lazy" width="1024" height="683" /></span>
+          <span class="coll__arrow"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="coll__name" data-i18n="coll.ancient.n">Ancient History</span>
+          <span class="coll__meta"><span class="coll__count">1,940</span> <span data-i18n="coll.ancient.m">items · Archaeology &amp; origins</span></span>
+        </a>
+        <a class="coll" href="archive.html" data-reveal data-reveal-delay="80">
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2025/06/te1-10-1024x683.jpg" alt="" loading="lazy" width="1024" height="683" /></span>
+          <span class="coll__name" data-i18n="coll.history.n">History of Tamils</span>
+          <span class="coll__meta"><span class="coll__count">3,730</span></span>
+        </a>
+        <a class="coll" href="archive.html" data-reveal data-reveal-delay="120">
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2022/03/te-defacto.jpg" alt="" loading="lazy" width="900" height="600" /></span>
+          <span class="coll__name" data-i18n="coll.political.n">Political History</span>
+          <span class="coll__meta"><span class="coll__count">2,605</span></span>
+        </a>
+        <a class="coll coll--wide" href="archive.html" data-reveal data-reveal-delay="160">
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2022/03/mathangal.jpg" alt="" loading="lazy" width="900" height="600" /></span>
+          <span class="coll__name" data-i18n="coll.culture.n">Tamil Culture</span>
+          <span class="coll__meta"><span class="coll__count">2,180</span> <span data-i18n="coll.culture.m">items · Arts, music, faith &amp; martial traditions</span></span>
+        </a>
+        <a class="coll" href="archive.html" data-reveal data-reveal-delay="120">
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2026/01/te2-2-1024x683.jpg" alt="" loading="lazy" width="1024" height="683" /></span>
+          <span class="coll__name" data-i18n="coll.language.n">Tamil Language</span>
+          <span class="coll__meta"><span class="coll__count">1,460</span></span>
+        </a>
+        <a class="coll" href="archive.html" data-reveal data-reveal-delay="80">
+          <span class="coll__bg"><img src="https://telibrary.com/wp-content/uploads/2022/03/geo.jpg" alt="" loading="lazy" width="900" height="600" /></span>
+          <span class="coll__name" data-i18n="coll.eelam.n">Tamil Eelam</span>
+          <span class="coll__meta"><span class="coll__count">1,790</span> · <span data-i18n="coll.eelam.m">De facto state</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LATEST ADDITIONS ================= -->
+  <section class="section wrap-wide latest" aria-labelledby="latest-heading">
+    <div class="section-head">
+      <div>
+        <p class="kicker" data-i18n="latest.kicker">Recently archived</p>
+        <h2 class="section-head__title" id="latest-heading" data-i18n="latest.title">New to the collection</h2>
+      </div>
+      <a class="see-all" href="archive.html"><span data-i18n="latest.all">All additions</span><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="latest__grid">
+      <a class="latest-lead hovers" href="article.html" data-reveal>
+        <div class="fig"><img src="https://telibrary.com/wp-content/uploads/2026/01/te2-2-768x512.jpg" alt="Archival photograph from the Tamil Heritage collection" loading="lazy" width="768" height="512" /></div>
+        <p class="meta" data-i18n="latest.lead.k">Political History · 14 June 2026</p>
+        <h3 data-i18n="latest.lead.t">Violence descends upon peace</h3>
+        <p class="dek" data-i18n="latest.lead.d">A newly digitised dossier of testimonies, maps and press cuttings documents the years that reshaped the northern Vanni.</p>
+      </a>
+
+      <ol class="latest-list">
+        <li><a class="latest-item" href="article.html"><span class="latest-item__no">01</span><span><h4 data-i18n="latest.1">The rule of the Eelam Pandya kings of the Sangam age</h4><p class="meta" data-i18n="latest.1m">History · 12 June 2026</p></span></a></li>
+        <li><a class="latest-item" href="article.html"><span class="latest-item__no">02</span><span><h4 data-i18n="latest.2">Varma Kalai — the ancient martial and healing art</h4><p class="meta" data-i18n="latest.2m">Culture · 09 June 2026</p></span></a></li>
+        <li><a class="latest-item" href="article.html"><span class="latest-item__no">03</span><span><h4 data-i18n="latest.3">How the Tamil people lived</h4><p class="meta" data-i18n="latest.3m">Culture · 06 June 2026</p></span></a></li>
+        <li><a class="latest-item" href="article.html"><span class="latest-item__no">04</span><span><h4 data-i18n="latest.4">The rare statue of Ketu at Musée Guimet, Paris</h4><p class="meta" data-i18n="latest.4m">History · 02 June 2026</p></span></a></li>
+        <li><a class="latest-item" href="article.html"><span class="latest-item__no">05</span><span><h4 data-i18n="latest.5">Towards our places — Nainativu</h4><p class="meta" data-i18n="latest.5m">Political History · 31 May 2026</p></span></a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= MEDIA SHELVES ================= -->
+  <section class="section band-paper-2" aria-labelledby="media-heading">
+    <div class="wrap-wide">
+      <h2 class="visually-hidden" id="media-heading">Media library</h2>
+
+      <!-- E-books -->
+      <div class="shelf">
+        <div class="section-head">
+          <div><p class="kicker kicker--ochre" data-i18n="media.read.k">Read</p><h3 class="section-head__title" data-i18n="media.read.t">E-Books &amp; rare texts</h3></div>
+          <div class="timeline__controls">
+            <button class="icon-btn" type="button" data-rail-prev="books" aria-label="Previous books"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="icon-btn" type="button" data-rail-next="books" aria-label="More books"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="rail" data-rail="books" tabindex="0" aria-label="E-books">
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2022/03/mathangal.jpg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.1.t">Tamil Genocide</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2022/03/te-defacto.jpg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.2.t">Tamil Eelam: De Facto State</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2026/01/4-3.jpeg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.3.t">Tamil Literature</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2022/04/5.jpg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.4.t">Tamil Medicine</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2022/04/10.jpg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.5.t">Sangam Poetry</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+          <a class="book" href="article.html"><span class="book__cover"><img src="https://telibrary.com/wp-content/uploads/2022/03/2-1.jpg" alt="" loading="lazy" /></span><span class="book__title" data-i18n="book.6.t">Temple Inscriptions</span><span class="book__author" data-i18n="book.author">Archive Series</span></a>
+        </div>
+      </div>
+
+      <!-- Audio -->
+      <div class="shelf">
+        <div class="section-head">
+          <div><p class="kicker kicker--ochre" data-i18n="media.listen.k">Listen</p><h3 class="section-head__title" data-i18n="media.listen.t">Podcasts &amp; music</h3></div>
+          <div class="timeline__controls">
+            <button class="icon-btn" type="button" data-rail-prev="audio" aria-label="Previous audio"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="icon-btn" type="button" data-rail-next="audio" aria-label="More audio"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="rail" data-rail="audio" tabindex="0" aria-label="Podcasts and music">
+          <a class="audio" href="article.html"><span class="audio__art"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><span class="audio__title" data-i18n="audio.1">Veera Vithaikal</span><span class="audio__sub"><span data-i18n="audio.sub">Album</span> · 28 min</span></span></a>
+          <a class="audio" href="article.html"><span class="audio__art"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><span class="audio__title" data-i18n="audio.2">Vanakam Maaveera</span><span class="audio__sub"><span data-i18n="audio.sub">Album</span> · 41 min</span></span></a>
+          <a class="audio" href="article.html"><span class="audio__art"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><span class="audio__title" data-i18n="audio.3">Veera Jaththirai</span><span class="audio__sub"><span data-i18n="audio.sub">Album</span> · 6 tracks</span></span></a>
+          <a class="audio" href="article.html"><span class="audio__art"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><span class="audio__title" data-i18n="audio.4">Purappadum Puthu Yugam</span><span class="audio__sub"><span data-i18n="audio.sub">Album</span> · 19 min</span></span></a>
+        </div>
+      </div>
+
+      <!-- Newspapers feature -->
+      <div class="shelf">
+        <div class="press">
+          <div class="press__stack" aria-hidden="true">
+            <span class="press__sheet"><img src="https://telibrary.com/wp-content/uploads/2025/04/1-768x358.png" alt="" loading="lazy" /></span>
+            <span class="press__sheet"><img src="https://telibrary.com/wp-content/uploads/2025/05/te1-768x512.jpg" alt="" loading="lazy" /></span>
+            <span class="press__sheet"><img src="https://telibrary.com/wp-content/uploads/2026/01/te2-2-768x512.jpg" alt="" loading="lazy" /></span>
+          </div>
+          <div>
+            <p class="kicker" data-i18n="press.k">The press archive</p>
+            <h3 class="section-head__title" data-i18n="press.t">Newspapers, restored from 1841 onward</h3>
+            <p class="dek" style="margin-block:1rem 1.5rem;max-inline-size:46ch" data-i18n="press.d">
+              Out of the ashes of the 1981 fire, we are scanning the surviving runs of Tamil
+              and Eelam newspapers — page by fragile page — and making them searchable.
+            </p>
+            <a class="btn btn--ghost" href="archive.html" data-i18n="press.btn">Open the press archive</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTRIBUTE ================= -->
+  <section class="section-tight wrap" id="contribute" aria-labelledby="contribute-heading">
+    <div class="contribute" data-reveal>
+      <div>
+        <p class="kicker" data-i18n="contrib.k">Help rebuild what was lost</p>
+        <h2 class="contribute__title" id="contribute-heading" data-i18n="contrib.t">Do you hold a piece of Tamil memory?</h2>
+        <p class="contribute__text" data-i18n="contrib.d">
+          A photograph, a letter, a manuscript, a recording — every contribution widens the
+          archive. Upload material or support the volunteers who keep it alive.
+        </p>
+      </div>
+      <div class="contribute__actions">
+        <a class="btn btn--on-dark" href="#">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg>
+          <span data-i18n="contrib.up">Upload material</span>
+        </a>
+        <a class="btn btn--ghost" href="#" style="--btn-fg:var(--paper);border-color:oklch(94% 0.01 85 / 0.4)" data-i18n="contrib.sup">Support us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap-wide footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="https://telibrary.com/wp-content/uploads/2020/08/favicon.png" alt="" width="96" height="103" />
+        <span class="brand__name" style="color:var(--on-dark)">Tamil Heritage</span>
+      </a>
+      <p class="footer__mission" data-i18n="foot.mission">A non-political, diaspora-built archive of Tamil history, language and identity. <em>Founded in memory of the Jaffna Public Library.</em></p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-2.3-.2-3.5-.5-4-.3-.6-.9-1-1.5-1.2C18.6 6.5 12 6.5 12 6.5s-6.6 0-8 .3C3.4 7 2.8 7.4 2.5 8c-.3.5-.5 1.7-.5 4s.2 3.5.5 4c.3.6.9 1 1.5 1.2 1.4.3 8 .3 8 .3s6.6 0 8-.3c.6-.2 1.2-.6 1.5-1.2.3-.5.5-1.7.5-4zM10 15V9l5 3-5 3z"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="footer__col" aria-label="Collections">
+      <h4 data-i18n="foot.coll">Collections</h4>
+      <ul>
+        <li><a href="archive.html" data-i18n="coll.ancient.n">Ancient History</a></li>
+        <li><a href="archive.html" data-i18n="coll.history.n">History of Tamils</a></li>
+        <li><a href="archive.html" data-i18n="coll.political.n">Political History</a></li>
+        <li><a href="archive.html" data-i18n="coll.culture.n">Tamil Culture</a></li>
+        <li><a href="archive.html" data-i18n="coll.language.n">Tamil Language</a></li>
+        <li><a href="archive.html" data-i18n="coll.eelam.n">Tamil Eelam</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Media">
+      <h4 data-i18n="foot.media">Media</h4>
+      <ul>
+        <li><a href="#" data-i18n="topbar.ebooks">E-Books</a></li>
+        <li><a href="albums.html" data-i18n="media.listen.t">Podcasts &amp; Music</a></li>
+        <li><a href="newspapers.html" data-i18n="nav.news">Newspapers</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">Photo Archive</a></li>
+        <li><a href="names.html" data-i18n="foot.names">Tamil Name Database</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="About">
+      <h4 data-i18n="foot.lib">The Library</h4>
+      <ul>
+        <li><a href="#" data-i18n="foot.about">About us</a></li>
+        <li><a href="#contribute" data-i18n="foot.contrib">Contribute material</a></li>
+        <li><a href="#" data-i18n="contrib.sup">Support us</a></li>
+        <li><a href="learn.html" data-i18n="nav.learn">Learn</a></li>
+        <li><a href="#" data-i18n="foot.contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap-wide footer__bottom">
+    <span data-i18n="foot.bottom1">© 2026 Tamil Heritage · TEL Library — a community archive</span>
+    <span data-i18n="foot.bottom2">Redesign concept · built to become a WordPress theme</span>
+  </div>
+</footer>
+
+<script src="scripts/i18n.js" defer></script>
+<script src="scripts/nav.js" defer></script>
+<script src="scripts/rail.js" defer></script>
+<script src="scripts/reveal.js" defer></script>
+</body>
+</html>

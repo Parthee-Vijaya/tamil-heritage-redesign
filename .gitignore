@@ -1,0 +1,10 @@
+# Tooling / local
+.vercel
+.playwright-mcp
+node_modules
+.DS_Store
+
+# Working screenshots at repo root — only the curated screenshots/ folder is committed
+/*.jpeg
+/*.jpg
+/*.png

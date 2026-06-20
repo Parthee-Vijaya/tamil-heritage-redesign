@@ -1,0 +1,6 @@
+# Keep the deployment to just the prototype — not screenshots or planning docs
+*.jpeg
+*.jpg
+*.png
+*.md
+.playwright-mcp

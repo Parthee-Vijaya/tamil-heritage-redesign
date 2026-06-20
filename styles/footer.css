@@ -1,0 +1,81 @@
+/* ============================================================
+   TEL Library — Footer
+   ============================================================ */
+
+.site-footer {
+  background:
+    radial-gradient(120% 130% at 88% -10%, oklch(28% 0.045 50 / 0.85), transparent 55%),
+    var(--ink-surface);
+  color: var(--on-dark-soft);
+  padding-block: var(--space-xl) var(--space-lg);
+  position: relative;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0; inset-inline: 0;
+  block-size: 1px;
+  background: linear-gradient(90deg, transparent, var(--ochre-deep), transparent);
+  opacity: 0.6;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: var(--space-xl) var(--space-lg);
+}
+@media (max-width: 860px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .footer__grid { grid-template-columns: 1fr; } }
+
+.footer__brand .brand__name { color: var(--on-dark); }
+.footer__mission {
+  margin-block-start: var(--space-sm);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--on-dark-soft);
+  max-inline-size: 32ch;
+}
+.footer__mission em { color: var(--ochre); font-style: italic; }
+
+.footer__col h4 {
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin-block-end: var(--space-sm);
+}
+.footer__col ul { list-style: none; padding: 0; display: grid; gap: 0.7em; }
+.footer__col a {
+  text-decoration: none;
+  color: var(--on-dark-soft);
+  font-size: var(--text-base);
+  transition: color var(--dur-fast);
+}
+.footer__col a:hover { color: var(--on-dark); }
+
+.footer__social { display: flex; gap: 0.6rem; margin-block-start: var(--space-md); }
+.footer__social a {
+  inline-size: 2.5rem; block-size: 2.5rem;
+  display: grid; place-items: center;
+  border: 1px solid var(--line-dark);
+  border-radius: 50%;
+  transition: border-color var(--dur-fast), background-color var(--dur-fast), transform var(--dur-fast);
+}
+.footer__social a:hover { background: var(--ochre); border-color: var(--ochre); color: var(--ink-surface); transform: translateY(-2px); }
+.footer__social svg { inline-size: 1.1rem; }
+
+.footer__bottom {
+  margin-block-start: var(--space-xl);
+  padding-block-start: var(--space-md);
+  border-block-start: 1px solid var(--line-dark);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+  color: oklch(64% 0.012 70);
+}

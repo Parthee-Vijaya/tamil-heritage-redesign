@@ -1,0 +1,128 @@
+/* ============================================================
+   TEL Library — Typography roles
+   Fraunces (display) · Newsreader (body) · Archivo (UI labels)
+   Noto Serif Tamil (Tamil script)
+   ============================================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  font-optical-sizing: auto;
+  color: var(--ink);
+}
+
+/* Tamil text gets its own family wherever the [lang="ta"] hook appears */
+:lang(ta),
+.ta {
+  font-family: var(--font-tamil);
+  line-height: 1.7;
+}
+
+/* ---- Display / headings ---- */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 460;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--text-2xl); font-variation-settings: "opsz" 144; } /* pin Fraunces display cut */
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); line-height: var(--leading-snug); }
+
+/* ---- Kicker / eyebrow / museum label ---- */
+.kicker {
+  font-family: var(--font-ui);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--maroon);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+}
+
+.kicker--ochre { color: var(--ochre-label); }
+.kicker::before {
+  content: "";
+  inline-size: 1.6em;
+  block-size: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+.kicker--bare::before { display: none; }
+
+/* ---- Meta line (catalog data) ---- */
+.meta {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: var(--track-label);
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+
+/* ---- Standfirst / dek ---- */
+.dek {
+  font-size: var(--text-md);
+  line-height: 1.42;
+  color: var(--ink-soft);
+  font-weight: var(--weight-lede);
+  max-inline-size: var(--measure-narrow);
+  text-wrap: balance;
+}
+
+/* ---- Prose (article body) ---- */
+.prose {
+  max-inline-size: var(--measure);
+  font-size: var(--text-md);
+}
+.prose > * + * { margin-block-start: 1.35em; }
+.prose p { line-height: var(--leading-body); text-wrap: pretty; }
+.prose h2 {
+  font-size: var(--text-lg);
+  margin-block-start: 2.1em;
+  margin-block-end: -0.4em;
+}
+.prose a {
+  color: var(--maroon-deep);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: oklch(46% 0.145 25 / 0.4);
+}
+.prose a:hover { text-decoration-color: currentColor; }
+
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 3.9em;
+  line-height: 0.74;
+  font-weight: 500;
+  padding-inline-end: 0.08em;
+  padding-block-start: 0.06em;
+  color: var(--maroon);
+}
+
+/* ---- Pull quote ---- */
+.pullquote {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.2;
+  font-weight: 420;
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "WONK" 1; /* shares the hero's expressive italic */
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+a { color: var(--maroon-deep); } /* single warm link identity */
+
+::selection {
+  background: var(--maroon);
+  color: var(--paper);
+}
