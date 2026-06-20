@@ -48,6 +48,17 @@ Instant **search**, gender filters and a Tamil alphabet strip over a grid of nam
 
 ![Names database](screenshots/names.jpeg)
 
+### Albums & Newspapers
+The media library — song / recording **albums** with a sticky player bar, and a **newspaper archive** (press scans filtered by title and decade).
+
+![Albums](screenshots/albums.jpeg)
+![Newspapers](screenshots/newspapers.jpeg)
+
+### Learn
+Guided **learning paths** through the Tamil script, classical literature and history — levelled, with progress.
+
+![Learn](screenshots/learn.jpeg)
+
 ### Responsive
 Designed mobile‑first; no horizontal overflow from 320 → 1440px.
 
@@ -84,6 +95,11 @@ Palette: warm parchment surfaces, deep ink text, **memorial maroon** (`oklch(46%
 ├── scripts/       # nav, rail, reveal, filters, pages, i18n (bilingual engine)
 └── screenshots/   # images used in this README
 ```
+
+## Roadmap
+
+- [`REFINEMENT-PLAN.md`](REFINEMENT-PLAN.md) — deeper design refinement + more sections ported from the original (About, Notable Figures, the Tamil Eelam de-facto-state archive, a date-aware "Today in History" module, global search, media detail pages).
+- [`SUBPAGES-PLAN.md`](SUBPAGES-PLAN.md) — the original build plan for the five subpages (now built).
 
 ## Run locally
 
