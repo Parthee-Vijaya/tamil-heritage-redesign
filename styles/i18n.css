@@ -122,3 +122,8 @@ html.ta .name-card__gender { line-height: 1.2; }
 html.ta .section-head { align-items: baseline; column-gap: var(--space-sm); }
 html.ta .section-head > div { flex: 1 1 16rem; min-inline-size: 0; }
 html.ta .see-all { letter-spacing: 0.02em; flex-shrink: 0; }
+
+/* Phase-1 additions: today-in-history + mission count-up + hero slider */
+html.ta .today__date, html.ta .today__title, html.ta .hero__slide-title { font-family: var(--font-tamil); line-height: 1.26; }
+html.ta .today__text { font-family: var(--font-tamil); line-height: 1.7; }
+html.ta .today__more, html.ta .mission__num-label { font-family: var(--font-tamil-ui); text-transform: none; letter-spacing: 0.02em; }

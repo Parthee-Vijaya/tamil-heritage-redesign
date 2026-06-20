@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="styles/timeline.css" />
 <link rel="stylesheet" href="styles/collections.css" />
 <link rel="stylesheet" href="styles/media.css" />
+<link rel="stylesheet" href="styles/today.css" />
 <link rel="stylesheet" href="styles/footer.css" />
 <link rel="stylesheet" href="styles/i18n.css" />
 </head>
@@ -99,16 +100,41 @@
         </dl>
       </div>
 
-      <figure class="hero__feature" data-reveal data-reveal-delay="120">
-        <div class="fig hero__fig">
-          <span class="hero__badge" data-i18n="hero.badge">Featured collection</span>
-          <img src="https://telibrary.com/wp-content/uploads/2025/10/Pandaravanniyan-1024x703.png"
-               alt="Portrait of Pandara Vanniyan, the Tamil chieftain who resisted colonial rule"
-               width="1024" height="703" fetchpriority="high" />
-          <figcaption class="hero__caption">
-            <span class="kicker kicker--bare" data-i18n="hero.feat.kicker">Political History</span>
-            <h2 data-i18n="hero.feat.title">Pandara Vanniyan &amp; the last Tamil resistance</h2>
-          </figcaption>
+      <figure class="hero__feature" data-reveal data-reveal-delay="120" data-hero-slider aria-roledescription="carousel" aria-label="Featured stories">
+        <span class="hero__badge" data-i18n="hero.badge">Featured collection</span>
+        <div class="hero__slides">
+          <a class="hero__slide is-active" href="article.html">
+            <span class="fig">
+              <img src="https://telibrary.com/wp-content/uploads/2025/10/Pandaravanniyan-1024x703.png" alt="Portrait of Pandara Vanniyan, the Tamil chieftain who resisted colonial rule" width="1024" height="703" fetchpriority="high" />
+            </span>
+            <span class="hero__caption">
+              <span class="kicker kicker--bare" data-i18n="hero.feat.kicker">Political History</span>
+              <span class="hero__slide-title" data-i18n="hero.feat.title">Pandara Vanniyan &amp; the last Tamil resistance</span>
+            </span>
+          </a>
+          <a class="hero__slide" href="article.html">
+            <span class="fig">
+              <img src="https://telibrary.com/wp-content/uploads/2025/06/te1-10-1024x683.jpg" alt="" width="1024" height="683" loading="lazy" />
+            </span>
+            <span class="hero__caption">
+              <span class="kicker kicker--bare" data-i18n="hero.feat2.kicker">Culture</span>
+              <span class="hero__slide-title" data-i18n="hero.feat2.title">Varma Kalai — the ancient martial and healing art</span>
+            </span>
+          </a>
+          <a class="hero__slide" href="article.html">
+            <span class="fig">
+              <img src="https://telibrary.com/wp-content/uploads/2026/01/te2-2-1024x683.jpg" alt="" width="1024" height="683" loading="lazy" />
+            </span>
+            <span class="hero__caption">
+              <span class="kicker kicker--bare" data-i18n="hero.feat3.kicker">Political History</span>
+              <span class="hero__slide-title" data-i18n="hero.feat3.title">Violence descends upon peace</span>
+            </span>
+          </a>
+        </div>
+        <div class="hero__dots" role="group" aria-label="Choose featured story">
+          <button class="hero__dot is-active" type="button" aria-label="Story 1"></button>
+          <button class="hero__dot" type="button" aria-label="Story 2"></button>
+          <button class="hero__dot" type="button" aria-label="Story 3"></button>
         </div>
       </figure>
     </div>
@@ -125,6 +151,10 @@
           <strong>More than 97,000 books</strong>, palm-leaf manuscripts and 19th-century
           newspapers turned to ash — among the largest acts of cultural destruction in South Asia.
         </blockquote>
+        <p class="mission__stat" data-reveal data-reveal-delay="80">
+          <span class="mission__num" data-count="97000" data-count-suffix="+">0</span>
+          <span class="mission__num-label" data-i18n="mission.lost">volumes, manuscripts &amp; newspapers lost</span>
+        </p>
         <p class="mission__text" data-reveal data-reveal-delay="120" data-i18n="mission.text">
           TEL Library was founded on the 40th anniversary of that loss. We cannot recover
           what burned — but we can make sure it is never lost again. Everything here is
@@ -156,6 +186,31 @@
       <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1505 – 1948</span><span class="era__name" data-i18n="era.col.n">Colonial Period</span><span class="era__desc" data-i18n="era.col.d">Portuguese, Dutch and British rule over the Tamil lands.</span><span class="era__count">1,875 <span data-i18n="era.items">items</span></span></a>
       <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1948 – present</span><span class="era__name" data-i18n="era.modern.n">Modern Tamil Nadu</span><span class="era__desc" data-i18n="era.modern.d">Language movements, cinema, politics and renaissance.</span><span class="era__count">2,330 <span data-i18n="era.items">items</span></span></a>
       <a class="era" href="archive.html"><span class="era__dot"></span><span class="era__years">1976 – 2009</span><span class="era__name" data-i18n="era.eelam.n">Tamil Eelam</span><span class="era__desc" data-i18n="era.eelam.d">The de facto state, the conflict and the diaspora.</span><span class="era__count">2,605 <span data-i18n="era.items">items</span></span></a>
+    </div>
+  </section>
+
+  <!-- ================= TODAY IN HISTORY ================= -->
+  <section class="section band-ink today" aria-labelledby="today-heading" data-today>
+    <div class="wrap today__inner">
+      <div class="today__head">
+        <div>
+          <p class="kicker" style="color:var(--ochre)" data-i18n="today.k">Today in history</p>
+          <h2 class="today__date" id="today-heading" data-today-date>—</h2>
+        </div>
+        <div class="today__nav">
+          <button class="icon-btn" type="button" data-today-prev aria-label="Previous event"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="icon-btn" type="button" data-today-next aria-label="Next event"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <a class="today__card hovers" href="article.html">
+        <span class="fig today__fig"><img data-today-img src="https://telibrary.com/wp-content/uploads/2025/05/te1-1024x683.jpg" alt="" width="1024" height="683" /></span>
+        <span class="today__body">
+          <span class="today__year" data-today-year>—</span>
+          <span class="today__title" data-today-title>—</span>
+          <span class="today__text" data-today-text>—</span>
+          <span class="today__more"><span data-i18n="today.more">Read more</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
     </div>
   </section>
 
@@ -362,7 +417,7 @@
     <nav class="footer__col" aria-label="About">
       <h4 data-i18n="foot.lib">The Library</h4>
       <ul>
-        <li><a href="#" data-i18n="foot.about">About us</a></li>
+        <li><a href="about.html" data-i18n="foot.about">About us</a></li>
         <li><a href="#contribute" data-i18n="foot.contrib">Contribute material</a></li>
         <li><a href="#" data-i18n="contrib.sup">Support us</a></li>
         <li><a href="learn.html" data-i18n="nav.learn">Learn</a></li>
@@ -380,6 +435,9 @@
 <script src="scripts/i18n.js" defer></script>
 <script src="scripts/nav.js" defer></script>
 <script src="scripts/rail.js" defer></script>
+<script src="scripts/hero-feature.js" defer></script>
+<script src="scripts/today.js" defer></script>
+<script src="scripts/count.js" defer></script>
 <script src="scripts/reveal.js" defer></script>
 </body>
 </html>

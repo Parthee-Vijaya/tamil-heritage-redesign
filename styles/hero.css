@@ -66,14 +66,9 @@
   color: var(--ink-faint);
 }
 
-/* Featured visual: layered editorial frame */
+/* Featured visual: layered editorial frame + crossfade slider */
 .hero__feature { position: relative; }
-.hero__fig {
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-}
-.hero__fig::before {
+.hero__feature::before { /* decorative ochre offset frame */
   content: "";
   position: absolute;
   inset: -0.75rem -0.75rem auto auto;
@@ -83,6 +78,24 @@
   border-radius: var(--radius-lg);
   z-index: -1;
 }
+.hero__slides {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-decoration: none;
+  transition: opacity var(--dur-slow) var(--ease-out), visibility var(--dur-slow);
+}
+.hero__slide.is-active { opacity: 1; visibility: visible; }
+.hero__slide .fig { position: absolute; inset: 0; }
 .hero__caption {
   position: absolute;
   inset-inline: var(--space-md);
@@ -91,17 +104,41 @@
   color: var(--on-dark);
 }
 .hero__caption .kicker { color: var(--ochre); }
-.hero__caption h2 {
+.hero__slide-title {
+  display: block;
+  font-family: var(--font-display);
   color: var(--on-dark);
   font-size: var(--text-lg);
+  font-weight: 480;
+  line-height: 1.12;
   margin-block-start: 0.4rem;
+  text-wrap: balance;
   text-shadow: 0 1px 18px oklch(15% 0.02 50 / 0.5);
 }
+.hero__dots {
+  position: absolute;
+  inset-block-start: var(--space-md);
+  inset-inline-end: var(--space-md);
+  z-index: 4;
+  display: flex;
+  gap: 0.45rem;
+}
+.hero__dot {
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: oklch(96% 0.01 85 / 0.45);
+  transition: background-color var(--dur-fast), transform var(--dur-fast);
+}
+.hero__dot.is-active { background: var(--paper); transform: scale(1.25); }
 .hero__badge {
   position: absolute;
   inset-block-start: var(--space-md);
   inset-inline-start: var(--space-md);
-  z-index: 2;
+  z-index: 4;
   background: oklch(20% 0.02 50 / 0.55);
   backdrop-filter: blur(6px);
   border: 1px solid oklch(94% 0.01 85 / 0.25);
@@ -150,4 +187,32 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ochre);
+}
+
+/* Scroll-triggered count-up (1981 story) */
+.mission__stat {
+  margin-block-start: var(--space-md);
+  padding-block-start: var(--space-md);
+  border-block-start: 1px solid var(--line-dark);
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+.mission__num {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 1.5rem + 3.5vw, 4.5rem);
+  font-weight: 400;
+  font-variation-settings: "opsz" 144;
+  line-height: 0.9;
+  color: var(--ochre);
+  font-variant-numeric: tabular-nums;
+}
+.mission__num-label {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--on-dark-soft);
+  max-inline-size: 20ch;
 }

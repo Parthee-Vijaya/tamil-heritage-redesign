@@ -1,0 +1,75 @@
+/* ============================================================
+   TEL Library — "Today in history" band (home)
+   ============================================================ */
+
+.today__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-block-end: var(--space-lg);
+}
+.today__date {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-variation-settings: "opsz" 144;
+  color: var(--on-dark);
+  line-height: 1;
+  margin-block-start: 0.4rem;
+}
+.today__nav { display: flex; gap: 0.5rem; }
+
+.today__card {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(1.25rem, 0.5rem + 2.5vw, 3rem);
+  align-items: center;
+  text-decoration: none;
+  color: var(--on-dark);
+}
+@media (max-width: 760px) { .today__card { grid-template-columns: 1fr; gap: var(--space-md); } }
+
+.today__fig {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-ink);
+}
+
+.today__body { display: grid; gap: 0.55rem; }
+.today__year {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-variation-settings: "opsz" 144;
+  font-weight: 400;
+  color: var(--ochre);
+  line-height: 0.9;
+}
+.today__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 480;
+  line-height: 1.12;
+  color: var(--on-dark);
+  text-wrap: balance;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.today__card:hover .today__title { color: var(--ochre); }
+.today__text {
+  color: var(--on-dark-soft);
+  line-height: 1.6;
+  max-inline-size: 48ch;
+}
+.today__more {
+  margin-block-start: 0.3rem;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.today__more svg { inline-size: 1.1em; transition: transform var(--dur-fast) var(--ease-out); }
+.today__card:hover .today__more svg { transform: translateX(3px); }

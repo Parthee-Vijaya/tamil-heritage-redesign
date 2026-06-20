@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Newspapers — Tamil Heritage</title>
-<meta name="description" content="A searchable archive of Tamil and Eelam newspapers, scanned page by page from 1841 onward." />
+<title>About — Tamil Heritage</title>
+<meta name="description" content="About the Tamil Heritage digital archive — gathered, digitised and safeguarded by the Tamil diaspora in memory of the Jaffna Public Library." />
 <link rel="icon" href="https://telibrary.com/wp-content/uploads/2020/08/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,11 +14,11 @@
 <link rel="stylesheet" href="styles/global.css" />
 <link rel="stylesheet" href="styles/header.css" />
 <link rel="stylesheet" href="styles/footer.css" />
-<link rel="stylesheet" href="styles/archive.css" />
-<link rel="stylesheet" href="styles/pages.css" />
+<link rel="stylesheet" href="styles/article.css" />
+<link rel="stylesheet" href="styles/media.css" />
 <link rel="stylesheet" href="styles/i18n.css" />
 </head>
-<body data-title-key="np.title">
+<body data-title-key="ab.title">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header" data-header>
@@ -32,7 +32,7 @@
       <li><a class="nav__link" href="archive.html" data-i18n="nav.history">History of Tamils</a></li>
       <li><a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
       <li><a class="nav__link" href="albums.html" data-i18n="nav.albums">Albums</a></li>
-      <li><a class="nav__link" href="newspapers.html" data-i18n="nav.news" aria-current="page">Newspapers</a></li>
+      <li><a class="nav__link" href="newspapers.html" data-i18n="nav.news">Newspapers</a></li>
       <li><a class="nav__link" href="learn.html" data-i18n="nav.learn">Learn</a></li>
       <li><a class="nav__link" href="names.html" data-i18n="nav.names">Tamil&nbsp;Names</a></li>
     </ul>
@@ -46,81 +46,62 @@
 <div class="nav-scrim" data-scrim aria-hidden="true"></div>
 
 <main id="main">
-  <section class="archive-hero">
-    <div class="wrap-wide archive-hero__inner">
-      <div>
-        <p class="kicker" data-i18n="np.k">The press archive</p>
-        <h1 data-i18n="np.title">Newspapers</h1>
-        <p class="archive-hero__desc" data-i18n="np.desc">Surviving runs of Tamil and Eelam newspapers, scanned page by page and made searchable — from 1841 onward.</p>
+  <article>
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" data-i18n="a.crumb1">Archive</a><span>/</span>
+        <a href="about.html" data-i18n="ab.crumb">About</a>
+      </nav>
+    </div>
+
+    <header class="article-head wrap">
+      <div class="article-head__inner">
+        <p class="kicker" data-i18n="ab.kicker">About the archive</p>
+        <h1 class="article-title" data-i18n="ab.title">Rebuilding what was lost</h1>
+        <p class="article-standfirst" data-i18n="ab.standfirst">Tamil Heritage is a digital archive of Tamil history, language, culture and identity — gathered, digitised and safeguarded by volunteers across the diaspora, in memory of a library that was burned.</p>
       </div>
-      <p class="archive-hero__count">9,640<span data-i18n="np.count">issues digitised</span></p>
-    </div>
-  </section>
+    </header>
 
-  <div class="toolbar"><div class="wrap-wide toolbar__inner">
-    <div class="filter-group" data-filter-group aria-label="Filter by decade">
-      <span class="filter-label" data-i18n="np.f.decade">Decade</span>
-      <button class="chip is-active" aria-pressed="true" data-i18n="ar.all">All</button>
-      <button class="chip" aria-pressed="false">1840s</button>
-      <button class="chip" aria-pressed="false">1950s</button>
-      <button class="chip" aria-pressed="false">1980s</button>
-      <button class="chip" aria-pressed="false">2000s</button>
-    </div>
-    <div class="filter-group">
-      <label class="visually-hidden" for="sort">Sort</label>
-      <select class="sort" id="sort"><option data-i18n="ar.sort.chrono">Chronological (oldest)</option><option data-i18n="ar.sort.recent">Most recent</option><option data-i18n="ar.sort.az">A–Z</option></select>
-    </div>
-  </div></div>
-
-  <section class="section-tight wrap-wide" aria-label="Newspaper issues">
-    <div class="papers">
-      <a class="paper" href="article.html" data-reveal>
-        <span class="paper__cover"><span class="paper__date">1881-06-02</span><img src="https://telibrary.com/wp-content/uploads/2025/04/1-768x358.png" alt="" loading="lazy" /></span>
-        <span class="paper__name">Uthayatharakai</span>
-        <span class="paper__meta">Jaffna · 4 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal data-reveal-delay="60">
-        <span class="paper__cover"><span class="paper__date">1955-03-14</span><img src="https://telibrary.com/wp-content/uploads/2025/05/te1-768x512.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Eelanaadu</span>
-        <span class="paper__meta">Jaffna · 8 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal data-reveal-delay="120">
-        <span class="paper__cover"><span class="paper__date">1981-05-31</span><img src="https://telibrary.com/wp-content/uploads/2026/01/te2-2-768x512.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Suthanthiran</span>
-        <span class="paper__meta">Colombo · 12 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal>
-        <span class="paper__cover"><span class="paper__date">1986-06-04</span><img src="https://telibrary.com/wp-content/uploads/2025/06/te1-10-768x512.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Murasoli</span>
-        <span class="paper__meta">Chennai · 6 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal data-reveal-delay="60">
-        <span class="paper__cover"><span class="paper__date">1998-09-21</span><img src="https://telibrary.com/wp-content/uploads/2022/03/geo.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Thinakkural</span>
-        <span class="paper__meta">Colombo · 16 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal data-reveal-delay="120">
-        <span class="paper__cover"><span class="paper__date">2004-12-08</span><img src="https://telibrary.com/wp-content/uploads/2022/03/te-defacto.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Eelamurasu</span>
-        <span class="paper__meta">Kilinochchi · 10 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal>
-        <span class="paper__cover"><span class="paper__date">1948-02-04</span><img src="https://telibrary.com/wp-content/uploads/2026/01/4-3.jpeg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Virakesari</span>
-        <span class="paper__meta">Colombo · 14 <span data-i18n="np.pages">pages</span></span>
-      </a>
-      <a class="paper" href="article.html" data-reveal data-reveal-delay="60">
-        <span class="paper__cover"><span class="paper__date">1972-07-19</span><img src="https://telibrary.com/wp-content/uploads/2022/03/mathangal.jpg" alt="" loading="lazy" /></span>
-        <span class="paper__name">Chinthamani</span>
-        <span class="paper__meta">Jaffna · 8 <span data-i18n="np.pages">pages</span></span>
-      </a>
+    <div class="wrap article-hero">
+      <figure>
+        <div class="fig"><img src="https://telibrary.com/wp-content/uploads/2025/05/te1-1024x683.jpg" alt="The Jaffna Public Library" width="1024" height="683" fetchpriority="high" /></div>
+        <figcaption class="figcaption" data-i18n="ab.cap"><b>The Jaffna Public Library.</b> Opened in 1933, it grew into one of the richest collections of Tamil-language material in the world before its destruction in 1981.</figcaption>
+      </figure>
     </div>
 
-    <nav class="pagination" aria-label="Pagination">
-      <span class="is-current" aria-current="page">1</span><a href="#">2</a><a href="#">3</a><span class="dots">…</span><a href="#">214</a>
-      <a href="#" aria-label="Next page"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></a>
-    </nav>
-  </section>
+    <div class="wrap">
+      <div class="prose" style="margin-inline:auto">
+        <h2 data-i18n="ab.h1">The night of the fire</h2>
+        <p data-i18n="ab.p1">On the night of 31 May 1981, the Jaffna Public Library was set ablaze. More than ninety-seven thousand books, palm-leaf manuscripts and 19th-century newspapers — much of it existing nowhere else — turned to ash. It remains among the most severe single acts of cultural destruction of the twentieth century.</p>
+        <p data-i18n="ab.p2">TEL Library was founded forty years later, by the Tamil diaspora, on the anniversary of that loss. We cannot recover what burned. But we can make sure it is never lost again.</p>
+
+        <blockquote class="pullquote">
+          <span data-i18n="ab.pq">“The burning was not an attack on a building. It was an attack on memory itself.”</span>
+          <cite data-i18n="ab.pqc">— Why this archive exists</cite>
+        </blockquote>
+
+        <h2 data-i18n="ab.h2">A non-political home</h2>
+        <p data-i18n="ab.p2b">This is a non-political archive. We gather and preserve every aspect of Tamil identity — ancient history, language and literature, culture, and the political history of the Tamil people — without alignment to any party. The record is what matters; we keep it faithfully, with sources, and let it speak.</p>
+
+        <h2 data-i18n="ab.h3">Gathered by the diaspora</h2>
+        <p data-i18n="ab.p3">Everything here is contributed, verified, digitised and kept by volunteers across the world. A photograph in a family album, a letter, a manuscript, a recording — each contribution widens the archive and helps rebuild, page by page, what the fire took.</p>
+      </div>
+    </div>
+
+    <section class="section-tight wrap" id="contribute" aria-labelledby="contribute-heading">
+      <div class="contribute">
+        <div>
+          <p class="kicker" data-i18n="contrib.k">Help rebuild what was lost</p>
+          <h2 class="contribute__title" id="contribute-heading" data-i18n="contrib.t">Do you hold a piece of Tamil memory?</h2>
+          <p class="contribute__text" data-i18n="contrib.d">A photograph, a letter, a manuscript, a recording — every contribution widens the archive. Upload material or support the volunteers who keep it alive.</p>
+        </div>
+        <div class="contribute__actions">
+          <a class="btn btn--on-dark" href="#"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg><span data-i18n="contrib.up">Upload material</span></a>
+          <a class="btn btn--ghost" href="#" style="--btn-fg:var(--paper);border-color:oklch(94% 0.01 85 / 0.4)" data-i18n="contrib.sup">Support us</a>
+        </div>
+      </div>
+    </section>
+  </article>
 </main>
 
 <footer class="site-footer">
@@ -136,14 +117,13 @@
     </div>
     <nav class="footer__col" aria-label="Collections"><h4 data-i18n="foot.coll">Collections</h4><ul><li><a href="archive.html" data-i18n="coll.ancient.n">Ancient History</a></li><li><a href="archive.html" data-i18n="coll.history.n">History of Tamils</a></li><li><a href="archive.html" data-i18n="coll.political.n">Political History</a></li><li><a href="archive.html" data-i18n="coll.culture.n">Tamil Culture</a></li><li><a href="archive.html" data-i18n="coll.language.n">Tamil Language</a></li><li><a href="archive.html" data-i18n="coll.eelam.n">Tamil Eelam</a></li></ul></nav>
     <nav class="footer__col" aria-label="Media"><h4 data-i18n="foot.media">Media</h4><ul><li><a href="#" data-i18n="topbar.ebooks">E-Books</a></li><li><a href="albums.html" data-i18n="media.listen.t">Podcasts &amp; Music</a></li><li><a href="newspapers.html" data-i18n="nav.news">Newspapers</a></li><li><a href="gallery.html" data-i18n="nav.gallery">Photo Archive</a></li><li><a href="names.html" data-i18n="foot.names">Tamil Name Database</a></li></ul></nav>
-    <nav class="footer__col" aria-label="About"><h4 data-i18n="foot.lib">The Library</h4><ul><li><a href="about.html" data-i18n="foot.about">About us</a></li><li><a href="index.html#contribute" data-i18n="foot.contrib">Contribute material</a></li><li><a href="#" data-i18n="contrib.sup">Support us</a></li><li><a href="learn.html" data-i18n="nav.learn">Learn</a></li><li><a href="#" data-i18n="foot.contact">Contact</a></li></ul></nav>
+    <nav class="footer__col" aria-label="About"><h4 data-i18n="foot.lib">The Library</h4><ul><li><a href="about.html" data-i18n="foot.about">About us</a></li><li><a href="about.html#contribute" data-i18n="foot.contrib">Contribute material</a></li><li><a href="#" data-i18n="contrib.sup">Support us</a></li><li><a href="learn.html" data-i18n="nav.learn">Learn</a></li><li><a href="#" data-i18n="foot.contact">Contact</a></li></ul></nav>
   </div>
   <div class="wrap-wide footer__bottom"><span data-i18n="foot.bottom1">© 2026 Tamil Heritage · TEL Library — a community archive</span><span data-i18n="foot.bottom2">Redesign concept · built to become a WordPress theme</span></div>
 </footer>
 
 <script src="scripts/i18n.js" defer></script>
 <script src="scripts/nav.js" defer></script>
-<script src="scripts/filters.js" defer></script>
 <script src="scripts/reveal.js" defer></script>
 </body>
 </html>

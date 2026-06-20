@@ -19,14 +19,19 @@ The goal: replace the dated news‑portal theme with a dignified **“digital ar
 ## Screens
 
 ### Home
-A calm, editorial front page: a featured story, the **1981 memorial band**, a scrollable **chronology of Tamil history**, curated bento collections, recent additions, media shelves and a contribute call‑to‑action.
+A calm, editorial front page: a **rotating featured story**, a scroll‑animated **1981 memorial band** (the 97,000+ counts up as you reach it), a chronology of Tamil history, curated bento collections, media shelves and a contribute call‑to‑action.
 
 ![Home — English](screenshots/home.jpeg)
 
 ### Fully bilingual — one click switches everything
-The **தமிழ் / EN** toggle swaps the entire site (nav, headings, body, labels, even the page `<title>` and search placeholder) and remembers your choice. Tamil is set in **Tiro Tamil** (display/body) + **Catamaran** (UI) so it reads as polished as the English.
+The **தமிழ் / EN** toggle swaps the entire site (nav, headings, body, labels, even the page `<title>`, search placeholder and the date‑driven modules) and remembers your choice. Tamil is set in **Tiro Tamil** (display/body) + **Catamaran** (UI) so it reads as polished as the English.
 
 ![Home — தமிழ்](screenshots/home-tamil.jpeg)
+
+### Today in history
+A **date‑aware** band that surfaces a real dated event from Tamil / Eelam history — browsable and fully bilingual.
+
+![Today in history](screenshots/today.jpeg)
 
 ### Article
 Museum‑quality long‑form layout — drop‑cap, comfortable reading measure, pull‑quotes, a **catalogue / provenance** sidebar, sources, and related entries.
@@ -59,6 +64,11 @@ Guided **learning paths** through the Tamil script, classical literature and his
 
 ![Learn](screenshots/learn.jpeg)
 
+### About
+The origin story — the 1981 fire, the non‑political mission, and how the diaspora rebuilds the archive, page by page.
+
+![About](screenshots/about.jpeg)
+
 ### Responsive
 Designed mobile‑first; no horizontal overflow from 320 → 1440px.
 
@@ -68,9 +78,10 @@ Designed mobile‑first; no horizontal overflow from 320 → 1440px.
 
 ## Features
 
-- **8 pages** — Home, Article, Archive, Gallery, Albums, Newspapers, Learn, Tamil Names.
-- **English ⇄ Tamil** toggle with authentic strings (nav, sections and article titles taken from telibrary.com), persisted in `localStorage`, with full Tamil typography.
+- **9 pages** — Home, About, Article, Archive, Gallery, Albums, Newspapers, Learn, Tamil Names.
+- **English ⇄ Tamil** toggle with authentic strings (nav, sections and article titles taken from telibrary.com), persisted in `localStorage`, with full Tamil typography — re‑renders the date‑driven modules too.
 - **Editorial design system** — warm parchment palette in `oklch`, memorial maroon + heritage ochre accents, a real type pairing, film‑grain atmosphere, and a signature chronology timeline.
+- **Storytelling moments** — a rotating featured‑story hero, a scroll‑triggered count‑up on the 1981 band, and a date‑aware "Today in history" module.
 - **Accessible** — semantic landmarks, keyboard‑operable nav/lightbox with focus management, `lang="ta"` on Tamil text, visible focus rings (adapted on dark bands), WCAG‑AA‑minded contrast, and `prefers-reduced-motion` honoured throughout.
 - **Interactive** — horizontal rails, gallery lightbox, live names search, album player bar.
 - **Fast & self‑contained** — static HTML/CSS/vanilla JS, no build step, no framework.
@@ -89,7 +100,7 @@ Palette: warm parchment surfaces, deep ink text, **memorial maroon** (`oklch(46%
 
 ```
 .
-├── index.html · article.html · archive.html
+├── index.html · about.html · article.html · archive.html
 ├── gallery.html · albums.html · newspapers.html · learn.html · names.html
 ├── styles/        # tokens, typography, global, per-feature CSS, i18n (Tamil mode)
 ├── scripts/       # nav, rail, reveal, filters, pages, i18n (bilingual engine)
@@ -98,7 +109,7 @@ Palette: warm parchment surfaces, deep ink text, **memorial maroon** (`oklch(46%
 
 ## Roadmap
 
-- [`REFINEMENT-PLAN.md`](REFINEMENT-PLAN.md) — deeper design refinement + more sections ported from the original (About, Notable Figures, the Tamil Eelam de-facto-state archive, a date-aware "Today in History" module, global search, media detail pages).
+- [`REFINEMENT-PLAN.md`](REFINEMENT-PLAN.md) — deeper design refinement + more sections ported from the original. **Phase 1 shipped** (About page · "Today in History" module · 1981 scroll count‑up · rotating hero). Still ahead: Notable Figures directory, the Tamil Eelam de-facto-state archive, global search, media detail pages.
 - [`SUBPAGES-PLAN.md`](SUBPAGES-PLAN.md) — the original build plan for the five subpages (now built).
 
 ## Run locally

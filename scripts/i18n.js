@@ -40,6 +40,40 @@
     "hero.feat.kicker": { en: "Political History", ta: "அரசியல் வரலாறு" },
     "hero.feat.title":  { en: "Pandara Vanniyan &amp; the last Tamil resistance",
                           ta: "பண்டார வன்னியனும் இறுதித் தமிழ் எதிர்ப்பும்" },
+    "hero.feat2.kicker": { en: "Culture", ta: "பண்பாடு" },
+    "hero.feat2.title":  { en: "Varma Kalai — the ancient martial and healing art",
+                           ta: "வர்மக்கலை — ஆதித் தமிழனின் தற்காப்பும் மருத்துவமும்" },
+    "hero.feat3.kicker": { en: "Political History", ta: "அரசியல் வரலாறு" },
+    "hero.feat3.title":  { en: "Violence descends upon peace",
+                           ta: "அமைதியின் மீது பாய்ந்த வன்முறை" },
+
+    /* today in history */
+    "today.k":   { en: "Today in history", ta: "வரலாற்றில் இன்று" },
+    "today.on":  { en: "On this day", ta: "இந்நாளில்" },
+    "today.more":{ en: "Read more", ta: "மேலும் வாசிக்க" },
+    "mission.lost": { en: "volumes, manuscripts &amp; newspapers lost", ta: "நூல்கள், சுவடிகள், செய்தித்தாள்கள் இழந்தன" },
+
+    /* ---------- About page ---------- */
+    "ab.crumb": { en: "About", ta: "எம்மைப் பற்றி" },
+    "ab.kicker": { en: "About the archive", ta: "நூலகத்தைப் பற்றி" },
+    "ab.title": { en: "Rebuilding what was lost", ta: "இழந்ததை மீளக் கட்டுதல்" },
+    "ab.standfirst": { en: "Tamil Heritage is a digital archive of Tamil history, language, culture and identity — gathered, digitised and safeguarded by volunteers across the diaspora, in memory of a library that was burned.",
+                       ta: "தமிழ் மரபு என்பது தமிழ் வரலாறு, மொழி, பண்பாடு, அடையாளம் ஆகியவற்றின் ஓர் இலக்க நூலகம் — எரிக்கப்பட்ட ஒரு நூலகத்தின் நினைவாக, புலம்பெயர் சமூகத்தின் தன்னார்வலர்களால் சேகரிக்கப்பட்டுப் பாதுகாக்கப்படுகிறது." },
+    "ab.cap": { en: "<b>The Jaffna Public Library.</b> Opened in 1933, it grew into one of the richest collections of Tamil-language material in the world before its destruction in 1981.",
+                ta: "<b>யாழ்ப்பாணப் பொது நூலகம்.</b> 1933இல் திறக்கப்பட்டு, 1981இல் அழிக்கப்படுவதற்கு முன், உலகின் செழுமையான தமிழ்மொழி ஆவணத் தொகுப்புகளுள் ஒன்றாக வளர்ந்தது." },
+    "ab.h1": { en: "The night of the fire", ta: "தீ மூண்ட இரவு" },
+    "ab.p1": { en: "On the night of 31 May 1981, the Jaffna Public Library was set ablaze. More than ninety-seven thousand books, palm-leaf manuscripts and 19th-century newspapers — much of it existing nowhere else — turned to ash. It remains among the most severe single acts of cultural destruction of the twentieth century.",
+               ta: "1981 மே 31 இரவு, யாழ்ப்பாணப் பொது நூலகம் தீக்கிரையாக்கப்பட்டது. தொண்ணூற்றேழாயிரத்துக்கும் மேற்பட்ட நூல்கள், ஓலைச் சுவடிகள், 19ஆம் நூற்றாண்டுச் செய்தித்தாள்கள் — பெரும்பாலானவை வேறெங்கும் இல்லாதவை — சாம்பலாயின. இருபதாம் நூற்றாண்டின் மிகக் கடுமையான பண்பாட்டு அழிப்புகளுள் ஒன்றாக அது இன்றும் நிலைக்கிறது." },
+    "ab.p2": { en: "TEL Library was founded forty years later, by the Tamil diaspora, on the anniversary of that loss. We cannot recover what burned. But we can make sure it is never lost again.",
+               ta: "அந்த இழப்பின் நாற்பதாம் ஆண்டு நினைவில், தமிழ் புலம்பெயர் சமூகத்தால் இந்த நூலகம் தொடங்கப்பட்டது. எரிந்தவற்றை மீட்க முடியாது. ஆனால் அவை இனி ஒருபோதும் இழக்கப்படாமல் பார்த்துக்கொள்ள முடியும்." },
+    "ab.h2": { en: "A non-political home", ta: "கட்சிசார்பற்ற இல்லம்" },
+    "ab.p2b": { en: "This is a non-political archive. We gather and preserve every aspect of Tamil identity — ancient history, language and literature, culture, and the political history of the Tamil people — without alignment to any party. The record is what matters; we keep it faithfully, with sources, and let it speak.",
+                ta: "இது கட்சிசார்பற்ற நூலகம். தொன்மை வரலாறு, மொழி, இலக்கியம், பண்பாடு, தமிழ் மக்களின் அரசியல் வரலாறு — தமிழ் அடையாளத்தின் ஒவ்வொரு கூறையும் எந்தக் கட்சியோடும் சாராமல் சேகரித்துப் பேணுகிறோம். பதிவே முக்கியம்; அதை மூலங்களுடன் நம்பகமாகப் பேணி, அதைப் பேசவிடுகிறோம்." },
+    "ab.h3": { en: "Gathered by the diaspora", ta: "புலம்பெயர் சமூகத்தால் சேகரிக்கப்பட்டது" },
+    "ab.p3": { en: "Everything here is contributed, verified, digitised and kept by volunteers across the world. A photograph in a family album, a letter, a manuscript, a recording — each contribution widens the archive and helps rebuild, page by page, what the fire took.",
+               ta: "இங்குள்ள அனைத்தும் உலகெங்கிலுமுள்ள தன்னார்வலர்களால் வழங்கப்பட்டு, சரிபார்க்கப்பட்டு, இலக்கமயமாக்கப்பட்டுப் பேணப்படுகிறது. ஒரு குடும்ப ஆல்பத்தில் உள்ள புகைப்படம், ஒரு கடிதம், ஒரு சுவடி, ஒரு ஒலிப்பதிவு — ஒவ்வொரு பங்களிப்பும் நூலகத்தை விரிவாக்கி, தீ எடுத்துச்சென்றதைப் பக்கம் பக்கமாக மீளக் கட்ட உதவுகிறது." },
+    "ab.pq": { en: "“The burning was not an attack on a building. It was an attack on memory itself.”", ta: "“அந்த எரிப்பு ஒரு கட்டடத்தின் மீதான தாக்குதல் அல்ல. அது நினைவின் மீதான தாக்குதல்.”" },
+    "ab.pqc": { en: "— Why this archive exists", ta: "— இந்த நூலகம் ஏன் உள்ளது" },
     "stat.items":   { en: "Archived items", ta: "ஆவணங்கள்" },
     "stat.coll":    { en: "Collections", ta: "தொகுப்புகள்" },
     "stat.langs":   { en: "Languages", ta: "மொழிகள்" },
@@ -334,6 +368,7 @@
       b.setAttribute("aria-pressed", String(on));
     });
     try { localStorage.setItem(STORE, lang); } catch (e) {}
+    document.dispatchEvent(new CustomEvent("tel:lang", { detail: lang }));
   };
 
   // Bind toggle buttons
