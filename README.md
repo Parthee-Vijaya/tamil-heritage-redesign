@@ -4,7 +4,7 @@ A modern, bilingual **(English ⇄ தமிழ்)** redesign concept for **[te
 
 The goal: replace the dated news‑portal theme with a dignified **“digital archive / editorial museum”** experience that matches the weight of the material — while staying easy to rebuild as a WordPress theme.
 
-**Live demo:** https://tamil-heritage.vercel.app · **Source:** this repo (served via GitHub Pages)
+**Live demo:** [tamil-heritage.vercel.app](https://tamil-heritage.vercel.app) · [GitHub Pages](https://parthee-vijaya.github.io/tamil-heritage-redesign/)
 
 ---
 
